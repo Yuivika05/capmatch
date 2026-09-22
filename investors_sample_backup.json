@@ -1,0 +1,50 @@
+[
+  {
+    "id": "inv-001",
+    "name": "Meridian Ventures",
+    "sectors": ["fintech", "saas", "marketplace"],
+    "stages": ["series_a", "series_b"],
+    "instruments": ["equity"],
+    "ticket_min_usd": 5000000,
+    "ticket_max_usd": 20000000,
+    "geographies": ["IN", "SEA", "US"],
+    "esg_required": false,
+    "thesis": "We back fintech and B2B SaaS founders in India and SE Asia at Series A/B, especially teams using AI to automate finance."
+  },
+  {
+    "id": "inv-002",
+    "name": "Terra Climate Fund",
+    "sectors": ["cleantech", "energy", "mobility"],
+    "stages": ["series_b", "growth"],
+    "instruments": ["equity", "debt"],
+    "ticket_min_usd": 15000000,
+    "ticket_max_usd": 60000000,
+    "geographies": ["EU", "US"],
+    "esg_required": true,
+    "thesis": "Growth capital for climate infrastructure with measurable impact. ESG mandatory. Focus on storage, grid, mobility."
+  },
+  {
+    "id": "inv-003",
+    "name": "Helix Angels",
+    "sectors": ["healthcare", "biotech", "fintech"],
+    "stages": ["seed", "pre_seed"],
+    "instruments": ["convertible", "equity"],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 3000000,
+    "geographies": ["US"],
+    "esg_required": false,
+    "thesis": "US seed-stage syndicate investing in digital-health startups with early traction, usually via convertible notes."
+  },
+  {
+    "id": "inv-004",
+    "name": "Global Debt Partners",
+    "sectors": ["fintech", "cleantech", "infrastructure"],
+    "stages": ["growth", "series_b"],
+    "instruments": ["debt"],
+    "ticket_min_usd": 10000000,
+    "ticket_max_usd": 100000000,
+    "geographies": ["US", "EU", "IN"],
+    "esg_required": false,
+    "thesis": "Venture debt and structured credit for revenue-generating growth companies preferring non-dilutive capital."
+  }
+]

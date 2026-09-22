@@ -1,50 +1,2532 @@
 [
   {
-    "id": "inv-001",
-    "name": "Meridian Ventures",
-    "sectors": ["fintech", "saas", "marketplace"],
-    "stages": ["series_a", "series_b"],
-    "instruments": ["equity"],
-    "ticket_min_usd": 5000000,
-    "ticket_max_usd": 20000000,
-    "geographies": ["IN", "SEA", "US"],
-    "esg_required": false,
-    "thesis": "We back fintech and B2B SaaS founders in India and SE Asia at Series A/B, especially teams using AI to automate finance."
-  },
-  {
-    "id": "inv-002",
-    "name": "Terra Climate Fund",
-    "sectors": ["cleantech", "energy", "mobility"],
-    "stages": ["series_b", "growth"],
-    "instruments": ["equity", "debt"],
-    "ticket_min_usd": 15000000,
-    "ticket_max_usd": 60000000,
-    "geographies": ["EU", "US"],
-    "esg_required": true,
-    "thesis": "Growth capital for climate infrastructure with measurable impact. ESG mandatory. Focus on storage, grid, mobility."
-  },
-  {
-    "id": "inv-003",
-    "name": "Helix Angels",
-    "sectors": ["healthcare", "biotech", "fintech"],
-    "stages": ["seed", "pre_seed"],
-    "instruments": ["convertible", "equity"],
+    "id": "inv-k3",
+    "name": "Upfront Ventures",
+    "sectors": [
+      "media",
+      "ai",
+      "healthcare",
+      "saas",
+      "fintech"
+    ],
+    "stages": [
+      "series_b",
+      "series_a",
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
     "ticket_min_usd": 500000,
-    "ticket_max_usd": 3000000,
-    "geographies": ["US"],
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
     "esg_required": false,
-    "thesis": "US seed-stage syndicate investing in digital-health startups with early traction, usually via convertible notes."
+    "thesis": "General Partner at Upfront Ventures"
   },
   {
-    "id": "inv-004",
-    "name": "Global Debt Partners",
-    "sectors": ["fintech", "cleantech", "infrastructure"],
-    "stages": ["growth", "series_b"],
-    "instruments": ["debt"],
-    "ticket_min_usd": 10000000,
-    "ticket_max_usd": 100000000,
-    "geographies": ["US", "EU", "IN"],
+    "id": "inv-k4",
+    "name": "Hustle Fund",
+    "sectors": [
+      "media",
+      "saas",
+      "healthcare",
+      "ai",
+      "marketplace",
+      "fintech"
+    ],
+    "stages": [
+      "series_a",
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
     "esg_required": false,
-    "thesis": "Venture debt and structured credit for revenue-generating growth companies preferring non-dilutive capital."
+    "thesis": "I'm looking to invest in founders who execute with speed.  Two areas that I'm looking at most right now include 1) Digital consumer health and 2) Decentralized software / Blockchain companies"
+  },
+  {
+    "id": "inv-k24",
+    "name": "Bain Capital",
+    "sectors": [
+      "media",
+      "marketplace",
+      "healthcare"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Managing Director at Bain Capital"
+  },
+  {
+    "id": "inv-k1",
+    "name": "NFX",
+    "sectors": [
+      "saas",
+      "fintech",
+      "ai",
+      "marketplace"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Passionate about technically minded founders that have strong intuition about markets & customers. AI and crazy ideas. Clarity around go to market and distribution are particularly important to me as a former head of growth."
+  },
+  {
+    "id": "inv-k5",
+    "name": "Gokul Rajaram",
+    "sectors": [
+      "media",
+      "ai",
+      "cleantech",
+      "saas",
+      "marketplace",
+      "healthcare",
+      "fintech"
+    ],
+    "stages": [
+      "series_b",
+      "series_a",
+      "seed",
+      "pre_seed",
+      "growth"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Product and Business Helper at Doordash"
+  },
+  {
+    "id": "inv-k6",
+    "name": "Bowery Capital",
+    "sectors": [
+      "media",
+      "saas",
+      "ai"
+    ],
+    "stages": [
+      "pre_seed",
+      "seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "General Partner at Bowery Capital"
+  },
+  {
+    "id": "inv-k7",
+    "name": "ENIAC Ventures",
+    "sectors": [
+      "media",
+      "marketplace",
+      "healthcare",
+      "saas",
+      "ai",
+      "fintech"
+    ],
+    "stages": [
+      "series_a",
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Founding General Partner at Eniac Ventures"
+  },
+  {
+    "id": "inv-k8",
+    "name": "Boost VC",
+    "sectors": [
+      "media",
+      "ai",
+      "agtech",
+      "healthcare",
+      "marketplace",
+      "fintech"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Founder and Managing Director of the Boost VC Accelerator"
+  },
+  {
+    "id": "inv-k36",
+    "name": "Liquid 2 Ventures",
+    "sectors": [
+      "ai",
+      "agtech",
+      "mobility",
+      "hardware",
+      "healthcare"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Partner at Liquid 2 Ventures"
+  },
+  {
+    "id": "inv-k10",
+    "name": "The Katama Group, LC",
+    "sectors": [
+      "agtech",
+      "media",
+      "fintech",
+      "healthcare",
+      "marketplace"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Fintech\nInsurtech\nUS businesses scaling in Asia/EU\nAsia/EU businesses looking to scale in the US"
+  },
+  {
+    "id": "inv-k11",
+    "name": "Quest Venture Partners",
+    "sectors": [
+      "media",
+      "marketplace",
+      "healthcare",
+      "saas"
+    ],
+    "stages": [
+      "series_b",
+      "series_a",
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "I like for teams that I can work with and help out. I like businesses where there is a thesis that broadly makes sense. Save the financial projections for Series B."
+  },
+  {
+    "id": "inv-k12",
+    "name": "Susa Ventures",
+    "sectors": [
+      "media",
+      "marketplace",
+      "hardware",
+      "healthcare",
+      "saas",
+      "ai"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "General Partner at Susa Ventures"
+  },
+  {
+    "id": "inv-k13",
+    "name": "XG Ventures",
+    "sectors": [
+      "media",
+      "saas",
+      "fintech",
+      "marketplace"
+    ],
+    "stages": [
+      "seed",
+      "series_a",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "XG Ventures\ufffd is focused primarily on the consumer internet, including the mobile, video, gaming, social media, and online media sectors."
+  },
+  {
+    "id": "inv-k14",
+    "name": "Trinity Ventures",
+    "sectors": [
+      "media",
+      "healthcare",
+      "marketplace",
+      "fintech"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Trinity Ventures invests in media, healthcare, marketplace, fintech."
+  },
+  {
+    "id": "inv-k15",
+    "name": "Altair Capital Management",
+    "sectors": [
+      "media",
+      "ai"
+    ],
+    "stages": [
+      "series_a",
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Chief Investment Officer at AltaIR Capital Management"
+  },
+  {
+    "id": "inv-k16",
+    "name": "NextView Ventures",
+    "sectors": [
+      "marketplace",
+      "media",
+      "saas",
+      "ai",
+      "healthcare"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "NextView Ventures is focused on entrepreneurs redesigning the Everyday Economy.  We're interested in technology-enabled services which have the potential to be either ubiquitous or habitual for end-users.  We primarily invest in both consumer and b2b services which fall into the largest markets of consumer spending: food, home, apparel, transportation, entertainment, health, and work & money.  See http://nextviewventures.com/approach/"
+  },
+  {
+    "id": "inv-k17",
+    "name": "Tribe Capital",
+    "sectors": [
+      "media",
+      "saas",
+      "marketplace",
+      "hardware",
+      "ai",
+      "fintech"
+    ],
+    "stages": [
+      "series_b",
+      "series_a",
+      "seed",
+      "pre_seed",
+      "growth"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Agnostic. Always open to new ideas."
+  },
+  {
+    "id": "inv-k18",
+    "name": "Zelkova Ventures",
+    "sectors": [
+      "media",
+      "agtech",
+      "saas",
+      "fintech"
+    ],
+    "stages": [
+      "series_a",
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "We invest in early stage B2B SaaS.  Areas we focus on include Marketing, Communications, Security, FinTech, Customer Service."
+  },
+  {
+    "id": "inv-k20",
+    "name": "First Round Capital",
+    "sectors": [
+      "media",
+      "hardware",
+      "agtech",
+      "saas",
+      "fintech"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Partner at First Round Capital"
+  },
+  {
+    "id": "inv-k21",
+    "name": "Fika Ventures",
+    "sectors": [
+      "media",
+      "ai",
+      "marketplace",
+      "saas"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "General Partner at Fika Ventures"
+  },
+  {
+    "id": "inv-k22",
+    "name": "R/GA Ventures",
+    "sectors": [
+      "media",
+      "ai",
+      "hardware",
+      "marketplace"
+    ],
+    "stages": [
+      "series_b",
+      "series_a",
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Sports Tech \ufffd Marketing Tech \ufffd Connected Commerce \ufffd IoT \ufffd Hospitality \ufffd Digital Media - Blockchain (non crypto/fintech)"
+  },
+  {
+    "id": "inv-k23",
+    "name": "Gradient Ventures",
+    "sectors": [
+      "media",
+      "fintech",
+      "saas",
+      "marketplace",
+      "ai"
+    ],
+    "stages": [
+      "series_a",
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Angel Investor; VC; Data Guy"
+  },
+  {
+    "id": "inv-k25",
+    "name": "Fifty Years",
+    "sectors": [
+      "agtech",
+      "cleantech",
+      "healthcare"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": true,
+    "thesis": "Founding Partner at Fifty Years"
+  },
+  {
+    "id": "inv-k27",
+    "name": "Wireframe Ventures",
+    "sectors": [
+      "ai",
+      "agtech",
+      "mobility",
+      "saas",
+      "healthcare",
+      "marketplace"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "We look for founders using advanced technology or unique market insight to attack high impact problems in the real world, across themes like human health, climate & sustainability, manufacturing and food & agriculture. Our investments include Full Harvest, Mammoth Biosciences, Misty Robotics, Renew Financial, Palantir and Assurex Health."
+  },
+  {
+    "id": "inv-k28",
+    "name": "FTW Ventures",
+    "sectors": [
+      "hardware",
+      "ai",
+      "agtech",
+      "mobility",
+      "cleantech",
+      "healthcare",
+      "saas"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "FTW Ventures invests in innovations for the Food System, including Ag, Food, Consumer & Heath Tech.\n\nWe look for great teams doing something revolutionary."
+  },
+  {
+    "id": "inv-k29",
+    "name": "Pathbreaker Ventures",
+    "sectors": [
+      "hardware",
+      "ai",
+      "agtech",
+      "saas"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "--- Robotics \n--- Applied AI / Machine Learning\n--- Food technologies\n--- Hyper-differentiated products\n\nPathbreaker invests in specialized teams solving hard technical problems in pursuit of generational impact."
+  },
+  {
+    "id": "inv-k30",
+    "name": "Structure Capital",
+    "sectors": [
+      "agtech",
+      "saas",
+      "healthcare",
+      "marketplace"
+    ],
+    "stages": [
+      "series_a",
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Mascot of Life"
+  },
+  {
+    "id": "inv-k9",
+    "name": "Sequoia Capital",
+    "sectors": [
+      "media",
+      "marketplace",
+      "agtech",
+      "saas",
+      "healthcare",
+      "fintech"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Labor marketplaces, AI, marketing technology."
+  },
+  {
+    "id": "inv-k32",
+    "name": "SOSV",
+    "sectors": [
+      "agtech",
+      "hardware",
+      "healthcare",
+      "cleantech"
+    ],
+    "stages": [
+      "series_b",
+      "seed",
+      "series_a",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": true,
+    "thesis": "Partner at SOSV"
+  },
+  {
+    "id": "inv-k33",
+    "name": "SOSV",
+    "sectors": [
+      "hardware",
+      "healthcare",
+      "agtech",
+      "cleantech"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Senior Director & Partner at SOSV\ufffds IndieBio"
+  },
+  {
+    "id": "inv-k34",
+    "name": "Script Capital",
+    "sectors": [
+      "marketplace",
+      "saas",
+      "agtech",
+      "ai",
+      "fintech"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Founder and Managing Partner at Script Capital"
+  },
+  {
+    "id": "inv-k35",
+    "name": "Better Food Ventures",
+    "sectors": [
+      "saas",
+      "agtech",
+      "ai"
+    ],
+    "stages": [
+      "series_b",
+      "series_a",
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Funding IT Innovators for Positive Impact in Food & Agriculture"
+  },
+  {
+    "id": "inv-k37",
+    "name": "General Catalyst",
+    "sectors": [
+      "agtech",
+      "ai",
+      "cleantech",
+      "marketplace",
+      "fintech",
+      "healthcare",
+      "saas"
+    ],
+    "stages": [
+      "series_b",
+      "series_a",
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Venture Advisor (former Partner) at General Catalyst"
+  },
+  {
+    "id": "inv-k38",
+    "name": "Gaingels",
+    "sectors": [
+      "agtech",
+      "ai",
+      "cleantech",
+      "saas",
+      "healthcare"
+    ],
+    "stages": [
+      "series_b",
+      "series_a",
+      "seed",
+      "pre_seed",
+      "growth"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Managing Director at Gaingels, Investor in 500+ companies"
+  },
+  {
+    "id": "inv-k39",
+    "name": "KdT Ventures",
+    "sectors": [
+      "hardware",
+      "healthcare",
+      "agtech",
+      "saas",
+      "cleantech",
+      "ai"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Founder and Managing Partner at KdT Ventures"
+  },
+  {
+    "id": "inv-k40",
+    "name": "Ascend Vietnam Ventures",
+    "sectors": [
+      "marketplace",
+      "agtech",
+      "ai",
+      "mobility",
+      "fintech",
+      "saas"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Tech companies solving emerging market problems"
+  },
+  {
+    "id": "inv-k41",
+    "name": "Sony Innovation Fund",
+    "sectors": [
+      "agtech",
+      "ai",
+      "fintech",
+      "saas"
+    ],
+    "stages": [
+      "series_b",
+      "series_a",
+      "seed",
+      "pre_seed",
+      "growth"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": true,
+    "thesis": "web3, FinTech, Cybersecurity, Autonomous Mobility/Transportation, Drones, FoodTech, AgTech, Robotics, InsurTech, AI, IoT... start-ups where Sony can bring in strategic value"
+  },
+  {
+    "id": "inv-k42",
+    "name": "Lowercarbon Capital",
+    "sectors": [
+      "hardware",
+      "agtech",
+      "cleantech"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": true,
+    "thesis": "Partner at Lowercarbon Capital"
+  },
+  {
+    "id": "inv-k43",
+    "name": "Kapor Capital",
+    "sectors": [
+      "agtech",
+      "cleantech",
+      "saas"
+    ],
+    "stages": [
+      "series_a",
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Principal at Kapor Capital"
+  },
+  {
+    "id": "inv-k44",
+    "name": "Third Sphere",
+    "sectors": [
+      "hardware",
+      "ai",
+      "agtech",
+      "mobility",
+      "cleantech"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Partner at Third Sphere"
+  },
+  {
+    "id": "inv-k46",
+    "name": "KdT Ventures",
+    "sectors": [
+      "hardware",
+      "healthcare",
+      "agtech",
+      "saas",
+      "cleantech"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Entrepreneurs reprogramming chemistry and biology using creative technology platforms."
+  },
+  {
+    "id": "inv-k19",
+    "name": "Webtalk Ltd",
+    "sectors": [
+      "media",
+      "agtech",
+      "healthcare",
+      "ai",
+      "fintech",
+      "saas"
+    ],
+    "stages": [
+      "series_b",
+      "series_a",
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Entrepreneur & Venture Investor"
+  },
+  {
+    "id": "inv-k48",
+    "name": "Wireframe Ventures",
+    "sectors": [
+      "agtech",
+      "mobility",
+      "cleantech",
+      "hardware",
+      "marketplace",
+      "healthcare",
+      "fintech"
+    ],
+    "stages": [
+      "series_a",
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": true,
+    "thesis": "Managing Partner & Co-Founder at Wireframe Ventures"
+  },
+  {
+    "id": "inv-k49",
+    "name": "Embark Ventures",
+    "sectors": [
+      "hardware",
+      "healthcare",
+      "agtech",
+      "ai"
+    ],
+    "stages": [
+      "seed",
+      "series_a",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Automation (AI/ML, Robotics), Advanced Materials and Biotech"
+  },
+  {
+    "id": "inv-k50",
+    "name": "Founders Fund",
+    "sectors": [
+      "ai",
+      "healthcare",
+      "cleantech",
+      "fintech"
+    ],
+    "stages": [
+      "series_b",
+      "seed",
+      "series_a",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Managing Partner at Founders Fund"
+  },
+  {
+    "id": "inv-k52",
+    "name": "C2 Investment",
+    "sectors": [
+      "ai",
+      "saas",
+      "fintech"
+    ],
+    "stages": [
+      "series_b",
+      "series_a",
+      "seed",
+      "pre_seed",
+      "growth"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Investor, entrepreneur"
+  },
+  {
+    "id": "inv-k53",
+    "name": "NFX",
+    "sectors": [
+      "agtech",
+      "media",
+      "saas",
+      "fintech",
+      "ai",
+      "marketplace"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Companies in the SF Bay Area. Anything with network effects: networks, marketplaces, synthetic biology, urban tech, fintech, B2B, B2C, consumer products, AR, IOT, connected devices."
+  },
+  {
+    "id": "inv-k54",
+    "name": "LAUNCH",
+    "sectors": [
+      "healthcare",
+      "ai",
+      "saas",
+      "agtech",
+      "fintech"
+    ],
+    "stages": [
+      "seed",
+      "series_b",
+      "series_a",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Founders with traction for the LAUNCH Accelerator\nFounders with $1m+ ARR for jasonssyndicate.com"
+  },
+  {
+    "id": "inv-k26",
+    "name": "NFX",
+    "sectors": [
+      "media",
+      "agtech",
+      "ai",
+      "marketplace",
+      "saas"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Investment Team at NFX"
+  },
+  {
+    "id": "inv-k56",
+    "name": "Streamlined Ventures",
+    "sectors": [
+      "media",
+      "ai",
+      "saas",
+      "cleantech",
+      "hardware",
+      "fintech"
+    ],
+    "stages": [
+      "seed",
+      "series_b",
+      "series_a",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Founder and General Partner at Streamlined Ventures"
+  },
+  {
+    "id": "inv-k57",
+    "name": "Scott Belsky",
+    "sectors": [
+      "marketplace",
+      "saas",
+      "cleantech",
+      "ai",
+      "fintech"
+    ],
+    "stages": [
+      "seed",
+      "series_a",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Product/Design Obsessive, Founder, Author, Investor"
+  },
+  {
+    "id": "inv-k58",
+    "name": "NFX",
+    "sectors": [
+      "ai",
+      "saas"
+    ],
+    "stages": [
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Co-Founder & CEO at SimilarWeb | NFX Scout"
+  },
+  {
+    "id": "inv-k59",
+    "name": "First Round Capital",
+    "sectors": [
+      "ai",
+      "healthcare",
+      "saas",
+      "marketplace",
+      "fintech"
+    ],
+    "stages": [
+      "series_b",
+      "seed",
+      "series_a",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Josh invests in all industries."
+  },
+  {
+    "id": "inv-k7666db3b-2411-4d62-8d25-51fb92f1f521",
+    "name": "Gaingels Capital",
+    "sectors": [
+      "agtech",
+      "saas",
+      "ai",
+      "cleantech",
+      "healthcare"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Managing Director at Gaingels, Investor in 500+ companies"
+  },
+  {
+    "id": "inv-k75c00329-7a82-4cf1-9113-cf0bd56b304d",
+    "name": "Structure Fund",
+    "sectors": [
+      "agtech",
+      "saas",
+      "healthcare",
+      "marketplace"
+    ],
+    "stages": [
+      "series_a",
+      "seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": false,
+    "thesis": "Mascot of Life"
+  },
+  {
+    "id": "inv-k877f727a-32df-4592-bbaa-ca3b3c82eb4b",
+    "name": "LAUNCH Ventures",
+    "sectors": [
+      "ai",
+      "agtech",
+      "healthcare",
+      "saas",
+      "fintech"
+    ],
+    "stages": [
+      "pre_seed",
+      "series_b",
+      "series_a"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "IN"
+    ],
+    "esg_required": false,
+    "thesis": "Founders with traction for the LAUNCH Accelerator\nFounders with $1m+ ARR for jasonssyndicate.com"
+  },
+  {
+    "id": "inv-k20587244-eb22-4b90-b178-2be40d987be4",
+    "name": "Structure Capital",
+    "sectors": [
+      "agtech",
+      "healthcare",
+      "marketplace",
+      "saas"
+    ],
+    "stages": [
+      "pre_seed",
+      "series_a",
+      "seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Mascot of Life"
+  },
+  {
+    "id": "inv-k1327acc3-658c-4db0-9146-4c807028c452",
+    "name": "Liquid Fund",
+    "sectors": [
+      "ai",
+      "healthcare",
+      "agtech",
+      "mobility",
+      "hardware"
+    ],
+    "stages": [
+      "pre_seed",
+      "seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Partner at Liquid 2 Ventures"
+  },
+  {
+    "id": "inv-k275b3cdb-073e-413d-89e2-5c7229ecd264",
+    "name": "FTW Ventures",
+    "sectors": [
+      "hardware",
+      "ai",
+      "agtech",
+      "mobility",
+      "cleantech",
+      "healthcare",
+      "saas"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "IN"
+    ],
+    "esg_required": false,
+    "thesis": "FTW Ventures invests in innovations for the Food System, including Ag, Food, Consumer & Heath Tech.\n\nWe look for great teams doing something revolutionary."
+  },
+  {
+    "id": "inv-k8c925b02-73ab-40df-8fd3-e221acd1b81d",
+    "name": "First Partners",
+    "sectors": [
+      "media",
+      "fintech",
+      "hardware",
+      "agtech",
+      "saas"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": false,
+    "thesis": "Partner at First Round Capital"
+  },
+  {
+    "id": "inv-k65ce42c2-6b5e-4a48-9601-5b215ad7758d",
+    "name": "The Partners",
+    "sectors": [
+      "fintech",
+      "agtech",
+      "media",
+      "healthcare",
+      "marketplace"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Fintech\nInsurtech\nUS businesses scaling in Asia/EU\nAsia/EU businesses looking to scale in the US"
+  },
+  {
+    "id": "inv-kbc5fc3c9-d140-47ea-b5a6-907c7d7774d7",
+    "name": "Wireframe Ventures",
+    "sectors": [
+      "ai",
+      "saas",
+      "agtech",
+      "mobility",
+      "healthcare",
+      "marketplace"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": false,
+    "thesis": "We look for founders using advanced technology or unique market insight to attack high impact problems in the real world, across themes like human health, climate & sustainability, manufacturing and food & agriculture. Our investments include Full Harvest, Mammoth Biosciences, Misty Robotics, Renew Financial, Palantir and Assurex Health."
+  },
+  {
+    "id": "inv-k4614a3d4-0e0f-4c28-b66d-d99fb545a2d1",
+    "name": "First Fund",
+    "sectors": [
+      "ai",
+      "healthcare",
+      "saas",
+      "marketplace",
+      "fintech"
+    ],
+    "stages": [
+      "series_a",
+      "series_b"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Josh invests in all industries."
+  },
+  {
+    "id": "inv-k1838dece-072c-412d-add5-5c44c6e6e7d1",
+    "name": "C2 Capital",
+    "sectors": [
+      "ai",
+      "fintech",
+      "saas"
+    ],
+    "stages": [
+      "pre_seed",
+      "growth"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": false,
+    "thesis": "Investor, entrepreneur"
+  },
+  {
+    "id": "inv-kfbaaae8f-0522-4fa3-b7e1-08610c38ecdd",
+    "name": "R/GA Partners",
+    "sectors": [
+      "media",
+      "ai",
+      "hardware",
+      "marketplace"
+    ],
+    "stages": [
+      "seed",
+      "series_a"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "SEA"
+    ],
+    "esg_required": false,
+    "thesis": "Sports Tech \ufffd Marketing Tech \ufffd Connected Commerce \ufffd IoT \ufffd Hospitality \ufffd Digital Media - Blockchain (non crypto/fintech)"
+  },
+  {
+    "id": "inv-k8118efba-7818-45ef-a02b-95ebfcd81c33",
+    "name": "Third Partners",
+    "sectors": [
+      "hardware",
+      "cleantech",
+      "mobility",
+      "ai",
+      "agtech"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "IN"
+    ],
+    "esg_required": false,
+    "thesis": "Partner at Third Sphere"
+  },
+  {
+    "id": "inv-k3be92729-7741-4388-b45e-c9719956e9f5",
+    "name": "Upfront Ventures",
+    "sectors": [
+      "media",
+      "ai",
+      "fintech",
+      "healthcare",
+      "saas"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "IN"
+    ],
+    "esg_required": false,
+    "thesis": "General Partner at Upfront Ventures"
+  },
+  {
+    "id": "inv-k83013033-4a4a-47d1-be8a-fa7066c68c25",
+    "name": "Boost Partners",
+    "sectors": [
+      "fintech",
+      "ai",
+      "media",
+      "agtech",
+      "healthcare",
+      "marketplace"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": false,
+    "thesis": "Founder and Managing Director of the Boost VC Accelerator"
+  },
+  {
+    "id": "inv-kd2185c78-f576-4f3e-a0f0-243300edfe17",
+    "name": "Boost Partners",
+    "sectors": [
+      "media",
+      "ai",
+      "agtech",
+      "healthcare",
+      "marketplace",
+      "fintech"
+    ],
+    "stages": [
+      "pre_seed",
+      "seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": false,
+    "thesis": "Founder and Managing Director of the Boost VC Accelerator"
+  },
+  {
+    "id": "inv-k61a075ea-31f6-43ec-af73-1218131bf9d7",
+    "name": "FTW Fund",
+    "sectors": [
+      "hardware",
+      "mobility",
+      "ai",
+      "agtech",
+      "cleantech",
+      "healthcare",
+      "saas"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": false,
+    "thesis": "FTW Ventures invests in innovations for the Food System, including Ag, Food, Consumer & Heath Tech.\n\nWe look for great teams doing something revolutionary."
+  },
+  {
+    "id": "inv-k657af4f3-5d6d-46e3-baaa-a304114f72df",
+    "name": "NFX Capital",
+    "sectors": [
+      "media",
+      "agtech",
+      "ai",
+      "saas",
+      "marketplace"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": false,
+    "thesis": "Investment Team at NFX"
+  },
+  {
+    "id": "inv-k7421c08b-49d2-41fd-8f7e-a40d0159bbe8",
+    "name": "Pathbreaker Fund",
+    "sectors": [
+      "saas",
+      "hardware",
+      "ai",
+      "agtech"
+    ],
+    "stages": [
+      "pre_seed",
+      "seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "--- Robotics \n--- Applied AI / Machine Learning\n--- Food technologies\n--- Hyper-differentiated products\n\nPathbreaker invests in specialized teams solving hard technical problems in pursuit of generational impact."
+  },
+  {
+    "id": "inv-k3166122a-e331-4d8c-a36e-e29ca664a0c4",
+    "name": "Structure Ventures",
+    "sectors": [
+      "agtech",
+      "saas",
+      "healthcare",
+      "marketplace"
+    ],
+    "stages": [
+      "seed",
+      "series_a"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "SEA"
+    ],
+    "esg_required": false,
+    "thesis": "Mascot of Life"
+  },
+  {
+    "id": "inv-k82e712d5-9a63-4d3e-a682-0b0e471f8016",
+    "name": "XG Capital",
+    "sectors": [
+      "marketplace",
+      "media",
+      "saas",
+      "fintech"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": false,
+    "thesis": "XG Ventures\ufffd is focused primarily on the consumer internet, including the mobile, video, gaming, social media, and online media sectors."
+  },
+  {
+    "id": "inv-k8eea3ac4-bb51-4649-8048-797c912114bb",
+    "name": "Upfront Capital",
+    "sectors": [
+      "media",
+      "saas",
+      "ai",
+      "healthcare",
+      "fintech"
+    ],
+    "stages": [
+      "pre_seed",
+      "seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "General Partner at Upfront Ventures"
+  },
+  {
+    "id": "inv-k31453af2-9f21-45dc-b80b-fe5cea48eb44",
+    "name": "First Fund",
+    "sectors": [
+      "media",
+      "hardware",
+      "agtech",
+      "saas",
+      "fintech"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Partner at First Round Capital"
+  },
+  {
+    "id": "inv-ke02cd668-435c-428a-ab60-53668af723e2",
+    "name": "First Fund",
+    "sectors": [
+      "ai",
+      "saas",
+      "fintech",
+      "healthcare",
+      "marketplace"
+    ],
+    "stages": [
+      "series_a",
+      "series_b",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": false,
+    "thesis": "Josh invests in all industries."
+  },
+  {
+    "id": "inv-k7fa5bd8c-c8fc-46c0-942a-665685095588",
+    "name": "Wireframe Ventures",
+    "sectors": [
+      "agtech",
+      "mobility",
+      "hardware",
+      "cleantech",
+      "marketplace",
+      "healthcare",
+      "fintech"
+    ],
+    "stages": [
+      "pre_seed",
+      "seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": true,
+    "thesis": "Managing Partner & Co-Founder at Wireframe Ventures"
+  },
+  {
+    "id": "inv-k32b10a93-70ff-430e-bcc8-3e9cd36876e3",
+    "name": "NFX Partners",
+    "sectors": [
+      "saas",
+      "fintech",
+      "ai",
+      "marketplace"
+    ],
+    "stages": [
+      "pre_seed",
+      "seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "IN"
+    ],
+    "esg_required": false,
+    "thesis": "Passionate about technically minded founders that have strong intuition about markets & customers. AI and crazy ideas. Clarity around go to market and distribution are particularly important to me as a former head of growth."
+  },
+  {
+    "id": "inv-k2cd56b0d-7d56-4507-b8d9-a75bb429518e",
+    "name": "Bowery Partners",
+    "sectors": [
+      "media",
+      "saas",
+      "ai"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "SEA"
+    ],
+    "esg_required": false,
+    "thesis": "General Partner at Bowery Capital"
+  },
+  {
+    "id": "inv-kba1db396-cb87-4475-b831-0290a0033dd9",
+    "name": "Embark Ventures",
+    "sectors": [
+      "hardware",
+      "ai",
+      "healthcare",
+      "agtech"
+    ],
+    "stages": [
+      "series_a",
+      "seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": false,
+    "thesis": "Automation (AI/ML, Robotics), Advanced Materials and Biotech"
+  },
+  {
+    "id": "inv-k6c9a11b7-f2ae-4510-97b1-1ad21e70b596",
+    "name": "NextView Partners",
+    "sectors": [
+      "marketplace",
+      "ai",
+      "media",
+      "saas",
+      "healthcare"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "SEA"
+    ],
+    "esg_required": false,
+    "thesis": "NextView Ventures is focused on entrepreneurs redesigning the Everyday Economy.  We're interested in technology-enabled services which have the potential to be either ubiquitous or habitual for end-users.  We primarily invest in both consumer and b2b services which fall into the largest markets of consumer spending: food, home, apparel, transportation, entertainment, health, and work & money.  See http://nextviewventures.com/approach/"
+  },
+  {
+    "id": "inv-k3d9ef7db-e66e-4c00-9d02-a7f6cdd2b9a9",
+    "name": "Gaingels Capital",
+    "sectors": [
+      "agtech",
+      "saas",
+      "ai",
+      "cleantech",
+      "healthcare"
+    ],
+    "stages": [
+      "series_a",
+      "seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "IN"
+    ],
+    "esg_required": false,
+    "thesis": "Managing Director at Gaingels, Investor in 500+ companies"
+  },
+  {
+    "id": "inv-k1a289e52-e3df-4505-8602-3d81c306715e",
+    "name": "Upfront Fund",
+    "sectors": [
+      "media",
+      "saas",
+      "healthcare",
+      "ai",
+      "fintech"
+    ],
+    "stages": [
+      "series_a",
+      "series_b"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "General Partner at Upfront Ventures"
+  },
+  {
+    "id": "inv-k272abdfd-9ca0-4d3a-af7b-96a55bf61a63",
+    "name": "Zelkova Ventures",
+    "sectors": [
+      "media",
+      "saas",
+      "agtech",
+      "fintech"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "We invest in early stage B2B SaaS.  Areas we focus on include Marketing, Communications, Security, FinTech, Customer Service."
+  },
+  {
+    "id": "inv-k75be20c3-b4a6-4044-9e25-b8046ffc29d5",
+    "name": "Altair Ventures",
+    "sectors": [
+      "media",
+      "ai"
+    ],
+    "stages": [
+      "seed",
+      "series_a"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "IN"
+    ],
+    "esg_required": false,
+    "thesis": "Chief Investment Officer at AltaIR Capital Management"
+  },
+  {
+    "id": "inv-k7a050445-3525-4592-8b53-f17720512401",
+    "name": "Summit Partners",
+    "sectors": [
+      "marketplace",
+      "fintech",
+      "saas",
+      "cleantech",
+      "ai"
+    ],
+    "stages": [
+      "pre_seed",
+      "seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "Product/Design Obsessive, Founder, Author, Investor"
+  },
+  {
+    "id": "inv-kfb61bc51-2f66-4542-8c69-bebe14aa2376",
+    "name": "LAUNCH Partners",
+    "sectors": [
+      "agtech",
+      "ai",
+      "healthcare",
+      "saas",
+      "fintech"
+    ],
+    "stages": [
+      "series_b",
+      "seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": false,
+    "thesis": "Founders with traction for the LAUNCH Accelerator\nFounders with $1m+ ARR for jasonssyndicate.com"
+  },
+  {
+    "id": "inv-k080ea156-3767-4354-9692-37c498e25971",
+    "name": "Gradient Partners",
+    "sectors": [
+      "media",
+      "saas",
+      "ai",
+      "fintech",
+      "marketplace"
+    ],
+    "stages": [
+      "pre_seed",
+      "series_a"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": false,
+    "thesis": "Angel Investor; VC; Data Guy"
+  },
+  {
+    "id": "inv-k9f267cf7-da10-4e70-b787-d172776096ea",
+    "name": "XG Partners",
+    "sectors": [
+      "saas",
+      "media",
+      "fintech",
+      "marketplace"
+    ],
+    "stages": [
+      "seed",
+      "series_a"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": false,
+    "thesis": "XG Ventures\ufffd is focused primarily on the consumer internet, including the mobile, video, gaming, social media, and online media sectors."
+  },
+  {
+    "id": "inv-k4211f674-fab1-499d-9fdb-567eff1690df",
+    "name": "FTW Fund",
+    "sectors": [
+      "hardware",
+      "agtech",
+      "saas",
+      "ai",
+      "mobility",
+      "cleantech",
+      "healthcare"
+    ],
+    "stages": [
+      "seed",
+      "pre_seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": false,
+    "thesis": "FTW Ventures invests in innovations for the Food System, including Ag, Food, Consumer & Heath Tech.\n\nWe look for great teams doing something revolutionary."
+  },
+  {
+    "id": "inv-k9953f8b5-d06d-4e3c-9bbb-4da17e6754e1",
+    "name": "Wireframe Partners",
+    "sectors": [
+      "agtech",
+      "healthcare",
+      "marketplace",
+      "cleantech",
+      "mobility",
+      "hardware",
+      "fintech"
+    ],
+    "stages": [
+      "series_a",
+      "seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": true,
+    "thesis": "Managing Partner & Co-Founder at Wireframe Ventures"
+  },
+  {
+    "id": "inv-kf6f0ebe9-e40e-405e-9062-1f63fc8032ea",
+    "name": "Better Fund",
+    "sectors": [
+      "saas",
+      "agtech",
+      "ai"
+    ],
+    "stages": [
+      "series_b",
+      "series_a"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": false,
+    "thesis": "Funding IT Innovators for Positive Impact in Food & Agriculture"
+  },
+  {
+    "id": "inv-kb674e9ee-4a9d-41df-8319-23d957ba7956",
+    "name": "Hustle Capital",
+    "sectors": [
+      "media",
+      "healthcare",
+      "fintech",
+      "marketplace",
+      "saas",
+      "ai"
+    ],
+    "stages": [
+      "pre_seed",
+      "series_a"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "US"
+    ],
+    "esg_required": false,
+    "thesis": "I'm looking to invest in founders who execute with speed.  Two areas that I'm looking at most right now include 1) Digital consumer health and 2) Decentralized software / Blockchain companies"
+  },
+  {
+    "id": "inv-k6cca0707-71bf-4f23-ae9a-a6a3dc168922",
+    "name": "Quest Fund",
+    "sectors": [
+      "media",
+      "healthcare",
+      "marketplace",
+      "saas"
+    ],
+    "stages": [
+      "pre_seed",
+      "seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "SEA"
+    ],
+    "esg_required": false,
+    "thesis": "I like for teams that I can work with and help out. I like businesses where there is a thesis that broadly makes sense. Save the financial projections for Series B."
+  },
+  {
+    "id": "inv-k856da904-c38a-43e0-946b-55bf90422f30",
+    "name": "KdT Capital",
+    "sectors": [
+      "hardware",
+      "cleantech",
+      "healthcare",
+      "agtech",
+      "saas",
+      "ai"
+    ],
+    "stages": [
+      "seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "IN"
+    ],
+    "esg_required": false,
+    "thesis": "Founder and Managing Partner at KdT Ventures"
+  },
+  {
+    "id": "inv-k70fb2f9c-80dc-44d8-8d71-da01d8509a83",
+    "name": "Lowercarbon Ventures",
+    "sectors": [
+      "hardware",
+      "cleantech",
+      "agtech"
+    ],
+    "stages": [
+      "seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": true,
+    "thesis": "Partner at Lowercarbon Capital"
+  },
+  {
+    "id": "inv-k597a10cf-34a2-4a14-bdd8-fab7d1ce1bbd",
+    "name": "General Ventures",
+    "sectors": [
+      "agtech",
+      "ai",
+      "cleantech",
+      "marketplace",
+      "fintech",
+      "healthcare",
+      "saas"
+    ],
+    "stages": [
+      "series_a",
+      "pre_seed",
+      "series_b"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": false,
+    "thesis": "Venture Advisor (former Partner) at General Catalyst"
+  },
+  {
+    "id": "inv-kc9f18514-7649-49d1-b76b-b3bb51c945fd",
+    "name": "Zelkova Partners",
+    "sectors": [
+      "media",
+      "saas",
+      "agtech",
+      "fintech"
+    ],
+    "stages": [
+      "pre_seed",
+      "seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": false,
+    "thesis": "We invest in early stage B2B SaaS.  Areas we focus on include Marketing, Communications, Security, FinTech, Customer Service."
+  },
+  {
+    "id": "inv-k833466f5-ed21-4d5f-8c22-33a4110c9531",
+    "name": "Hustle Partners",
+    "sectors": [
+      "media",
+      "healthcare",
+      "fintech",
+      "saas",
+      "ai",
+      "marketplace"
+    ],
+    "stages": [
+      "pre_seed",
+      "seed"
+    ],
+    "instruments": [
+      "equity"
+    ],
+    "ticket_min_usd": 500000,
+    "ticket_max_usd": 25000000,
+    "geographies": [
+      "EU"
+    ],
+    "esg_required": false,
+    "thesis": "I'm looking to invest in founders who execute with speed.  Two areas that I'm looking at most right now include 1) Digital consumer health and 2) Decentralized software / Blockchain companies"
   }
 ]

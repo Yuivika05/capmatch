@@ -1,12 +1,13 @@
-# main.py — the web app (API + login/register + a good-looking screen)
+# main.py — the web app (API + login + a good-looking screen)
 
 import json
 from fastapi import FastAPI, Depends, HTTPException
 from fastapi.responses import HTMLResponse
 from fastapi.security import OAuth2PasswordRequestForm
-from pydantic import BaseModel
 from matching import rank_matches
+from pydantic import BaseModel
 from auth import login_user, create_token, get_current_user, register_user
+from permissions import require_role, require_permission, ROLE_PERMISSIONS
 
 app = FastAPI(title="CapMatch")
 
@@ -35,7 +36,6 @@ def register(body: RegisterBody):
 
 
 # ---------- LOGIN ----------
-# ---------- LOGIN ----------
 @app.post("/login")
 def login(form: OAuth2PasswordRequestForm = Depends()):
     user = login_user(form.username, form.password)
@@ -44,15 +44,18 @@ def login(form: OAuth2PasswordRequestForm = Depends()):
     token = create_token(form.username, user["role"])
     return {"access_token": token, "token_type": "bearer", "role": user["role"]}
 
-# ---------- API endpoints (PROTECTED — need a valid token) ----------
+
+# ---------- API endpoints (now PROTECTED — need a valid token) ----------
 @app.get("/issuers")
 def get_issuers(user=Depends(get_current_user)):
     return ISSUERS
 
 
 @app.get("/investors")
-def get_investors(user=Depends(get_current_user)):
-    return INVESTORS
+def get_investors(user=Depends(require_permission("view_issuers"))):
+    # investor + admin only (issuers don't browse the investor list)
+    from data_access import all_investors
+    return all_investors()
 
 
 @app.get("/match/{issuer_id}")
@@ -60,18 +63,102 @@ def match(issuer_id: str, top_k: int = 5, user=Depends(get_current_user)):
     issuer = next((i for i in ISSUERS if i["id"] == issuer_id), None)
     if issuer is None:
         return {"error": f"Issuer '{issuer_id}' not found"}
-    results = rank_matches(issuer, INVESTORS, top_k=top_k)
+    from data_access import all_investors
+    results = rank_matches(issuer, all_investors(), top_k=top_k)
     return {"issuer": issuer, "matches": results, "requested_by": user["username"]}
+
 
 # ---------- AGENTIC matching (LangGraph) ----------
 @app.get("/agent/{issuer_id}")
 def agent_match(issuer_id: str, top_k: int = 4, user=Depends(get_current_user)):
     """Run the autonomous LangGraph agent: ingest -> retrieve (tool) ->
-    score (tool) -> reflect/loop -> explain."""
+    score (tool) -> reflect/loop -> explain. Returns the ranked matches, the
+    natural-language explanation, and the agent's step-by-step trace."""
     from matching_agent_graph import run_agent
     result = run_agent(issuer_id, top_k=top_k)
     result["requested_by"] = user["username"]
     return result
+
+
+# ---------- Kafka-STYLE event pipeline (Plan part 4: messaging) ----------
+# New Investor -> event topic -> embedding service consumes -> vector DB.
+import embedding_service
+from event_bus import all_topics, get_log
+
+
+class NewInvestor(BaseModel):
+    id: str
+    name: str
+    sectors: list = []
+    stages: list = []
+    instruments: list = ["equity"]
+    ticket_min_usd: int = 1000000
+    ticket_max_usd: int = 10000000
+    geographies: list = []
+    esg_required: bool = False
+    thesis: str = ""
+
+
+@app.post("/investors/publish")
+def publish_investor(inv: NewInvestor, user=Depends(require_permission("publish_investor"))):
+    """PRODUCER: publish a new investor into the pipeline. The embedding service
+    consumes the event, embeds the profile, and adds it to the vector DB —
+    automatically. Returns the event envelope + the resulting pipeline log."""
+    envelope = embedding_service.register_investor(inv.model_dump())
+    return {
+        "published": envelope,                     # topic, offset, timestamp
+        "indexed_events": get_log("investor.indexed"),
+        "requested_by": user["username"],
+    }
+
+
+@app.get("/pipeline/status")
+def pipeline_status(user=Depends(get_current_user)):
+    """Show live pipeline activity: topics, event counts, and recent events."""
+    return {
+        "topics": all_topics(),                    # {topic: count}
+        "created": get_log("investor.created"),
+        "indexed": get_log("investor.indexed"),
+    }
+
+
+# ---------- Role-based access (Plan part 5: RBAC) ----------
+@app.get("/me/permissions")
+def my_permissions(user=Depends(get_current_user)):
+    """Tell the caller who they are and exactly what their role may do."""
+    role = user.get("role")
+    return {
+        "username": user["username"],
+        "role": role,
+        "permissions": sorted(ROLE_PERMISSIONS.get(role, [])),
+    }
+
+
+# In-memory transactions store (mirrors the `transactions` PostgreSQL table).
+TRANSACTIONS: list = []
+
+
+class NewTransaction(BaseModel):
+    issuer_id: str
+    investor_id: str
+    amount_usd: int
+    status: str = "proposed"     # proposed | committed | closed
+
+
+@app.get("/admin/transactions")
+def list_transactions(user=Depends(require_role("admin"))):
+    """ADMIN ONLY: view all funding transactions. issuers/investors get 403."""
+    return {"transactions": TRANSACTIONS, "count": len(TRANSACTIONS)}
+
+
+@app.post("/admin/transactions")
+def create_transaction(tx: NewTransaction, user=Depends(require_role("admin"))):
+    """ADMIN ONLY: record a funding transaction between an issuer and investor."""
+    row = {"id": len(TRANSACTIONS) + 1, **tx.model_dump(),
+           "created_by": user["username"]}
+    TRANSACTIONS.append(row)
+    return {"created": row}
+
 
 # ---------- The good-looking screen ----------
 @app.get("/", response_class=HTMLResponse)
@@ -150,6 +237,17 @@ PAGE = """
   .badge{display:inline-block; background:rgba(55,217,154,.15); color:var(--good);
     font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; margin-left:8px}
 
+  /* AI Agent panel */
+  .agent{background:linear-gradient(160deg,#171f3a,#141d33); border:1px solid #3a3a7c;
+    border-radius:18px; padding:20px; margin-bottom:16px}
+  .agent h3{font-size:15px; margin-bottom:6px; display:flex; align-items:center; gap:8px}
+  .agent .answer{color:#e6ecff; font-size:14px; line-height:1.65; white-space:pre-wrap;
+    background:#0f1730; border-left:3px solid #8a5cff; padding:14px; border-radius:10px; margin:12px 0}
+  .agent .trace{margin-top:10px}
+  .agent .trace .t{font-size:12px; color:var(--mut); padding:6px 10px; margin:5px 0;
+    background:#0f1730; border-radius:8px; border-left:2px solid #5b8cff}
+  .agent .step{color:#7fb0ff; font-weight:700; margin-right:6px}
+
   /* Login overlay */
   .overlay{position:fixed; inset:0; background:rgba(6,10,20,.88); backdrop-filter:blur(6px);
     display:flex; align-items:center; justify-content:center; z-index:50}
@@ -220,10 +318,12 @@ PAGE = """
         <label>How many matches to show</label>
         <input id="topk" type="number" value="4" min="1" max="10">
         <button class="primary" onclick="runMatch()">⚡ Find best investors</button>
+        <button class="primary" style="background:linear-gradient(135deg,#8a5cff,#5b8cff);margin-top:10px" onclick="runAgent()">🧠 Ask the AI Agent</button>
       </div>
 
       <div>
-        <div class="status" id="status">Pick an issuer and click the button.</div>
+        <div class="status" id="status">Pick an issuer and click a button.</div>
+        <div id="agentBox"></div>
         <div id="results">
           <div class="empty">🔍 Your ranked matches will appear here.</div>
         </div>
@@ -332,9 +432,37 @@ function cls(s){ return s >= 0.75 ? 'hi' : s >= 0.4 ? 'mid' : 'lo'; }
 async function runMatch(){
   const id = document.getElementById('issuer').value;
   const k = document.getElementById('topk').value || 4;
-  document.getElementById('status').textContent = 'Agent scoring investors…';
+  document.getElementById('agentBox').innerHTML = '';
+  document.getElementById('status').textContent = 'Scoring investors…';
   const data = await (await fetch(`/match/${id}?top_k=${k}`, {headers:authHeaders()})).json();
   render(data);
+}
+
+async function runAgent(){
+  const id = document.getElementById('issuer').value;
+  const k = document.getElementById('topk').value || 4;
+  document.getElementById('status').textContent = '🧠 The AI agent is thinking… (ingest → retrieve → score → explain)';
+  document.getElementById('agentBox').innerHTML =
+    '<div class="agent"><h3>🧠 AI Agent working…</h3><div class="answer">Analyzing issuer and running tools…</div></div>';
+  const data = await (await fetch(`/agent/${id}?top_k=${k}`, {headers:authHeaders()})).json();
+  renderAgent(data);
+  if (data.matches) render({issuer: issuers.find(x=>x.id===id), matches: data.matches});
+}
+
+function renderAgent(data){
+  const trace = (data.trace || []).map((t, i) =>
+    `<div class="t"><span class="step">Step ${i+1}</span>${t}</div>`).join('');
+  document.getElementById('status').innerHTML = '✅ Agent finished.';
+  document.getElementById('agentBox').innerHTML = `
+    <div class="agent">
+      <h3>🧠 AI Agent Recommendation</h3>
+      <div class="answer">${(data.answer || '').replace(/</g,'&lt;')}</div>
+      <div class="trace">
+        <div style="font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);margin-bottom:6px">
+          🔍 Agent reasoning trace (what it did autonomously)</div>
+        ${trace}
+      </div>
+    </div>`;
 }
 
 function render(data){
